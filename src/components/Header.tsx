@@ -1,5 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
 const services = [
@@ -12,6 +12,32 @@ const services = [
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const servicesHoverTimeout = useRef<number | null>(null)
+
+  const clearServicesHoverTimeout = () => {
+    if (servicesHoverTimeout.current) {
+      window.clearTimeout(servicesHoverTimeout.current)
+      servicesHoverTimeout.current = null
+    }
+  }
+
+  const openServicesMenu = () => {
+    clearServicesHoverTimeout()
+    setServicesOpen(true)
+  }
+
+  const closeServicesMenu = () => {
+    clearServicesHoverTimeout()
+    servicesHoverTimeout.current = window.setTimeout(() => {
+      setServicesOpen(false)
+    }, 150)
+  }
+
+  useEffect(() => {
+    return () => {
+      clearServicesHoverTimeout()
+    }
+  }, [])
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700/50">
@@ -28,19 +54,15 @@ export function Header() {
             <Link to="/" className="text-slate-300 hover:text-white transition-colors text-sm font-medium">
               Trang Chủ
             </Link>
-            <div className="relative">
-              <button
-                className="flex items-center gap-1 text-slate-300 hover:text-white transition-colors text-sm font-medium"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
-              >
+            <div className="relative py-2" onMouseEnter={openServicesMenu} onMouseLeave={closeServicesMenu}>
+              <button className="flex items-center gap-1 text-slate-300 hover:text-white transition-colors text-sm font-medium">
                 Dịch Vụ <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
                 <div
                   className="absolute top-full left-0 mt-1 w-56 bg-slate-800 rounded-xl border border-slate-700 shadow-xl py-2"
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
+                  onMouseEnter={openServicesMenu}
+                  onMouseLeave={closeServicesMenu}
                 >
                   {services.map((s) => (
                     <Link
