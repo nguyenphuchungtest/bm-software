@@ -16,7 +16,7 @@ import {
 export const Route = createFileRoute('/dich-vu/giai-phap-phan-mem')({
   head: () => ({
     meta: [
-      { title: 'Giải Pháp Phần Mềm - TechPro Solutions' },
+      { title: 'Giải Pháp Phần Mềm - BMSoftware' },
       { name: 'description', content: 'Phát triển phần mềm tùy chỉnh, ứng dụng mobile, hệ thống ERP/CRM theo yêu cầu. Công nghệ tiên tiến, bảo trì 24/7.' },
     ],
   }),
@@ -87,6 +87,14 @@ function GiaiPhapPhanMemPage() {
                 </div>
               )
             })}
+          </div>
+
+          <div className="mt-14 max-w-5xl mx-auto rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-violet-500/10">
+            <img
+              src="/images/bmsoftware-software-showcase.jpg"
+              alt="Sản phẩm phần mềm do BMSoftware phát triển"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>

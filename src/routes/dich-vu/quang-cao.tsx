@@ -16,7 +16,7 @@ import {
 export const Route = createFileRoute('/dich-vu/quang-cao')({
   head: () => ({
     meta: [
-      { title: 'Dịch Vụ Quảng Cáo - TechPro Solutions' },
+      { title: 'Dịch Vụ Quảng Cáo - BMSoftware' },
       { name: 'description', content: 'Dịch vụ quảng cáo số toàn diện: Google Ads, Facebook Ads, TikTok, SEO. Tăng doanh thu, tiếp cận đúng khách hàng mục tiêu.' },
     ],
   }),

@@ -4,8 +4,8 @@ import { Users, Target, Heart, TrendingUp, Award, Globe, ArrowRight } from 'luci
 export const Route = createFileRoute('/ve-chung-toi')({
   head: () => ({
     meta: [
-      { title: 'Về Chúng Tôi - TechPro Solutions' },
-      { name: 'description', content: 'TechPro Solutions - Đối tác công nghệ tin cậy hơn 8 năm kinh nghiệm. Đội ngũ 80+ chuyên gia đồng hành cùng 200+ doanh nghiệp Việt Nam.' },
+      { title: 'Về Chúng Tôi - BMSoftware' },
+      { name: 'description', content: 'BMSoftware - Đối tác công nghệ tin cậy hơn 8 năm kinh nghiệm. Đội ngũ 80+ chuyên gia đồng hành cùng 200+ doanh nghiệp Việt Nam.' },
     ],
   }),
   component: VeChungToiPage,
@@ -26,7 +26,7 @@ const team = [
 ]
 
 const milestones = [
-  { year: '2016', event: 'Thành lập TechPro Solutions tại TP.HCM' },
+  { year: '2016', event: 'Thành lập BMSoftware tại TP.HCM' },
   { year: '2018', event: 'Mở rộng đội ngũ lên 20 thành viên, 50 khách hàng' },
   { year: '2020', event: 'Ra mắt dịch vụ chuyển đổi số và AI Integration' },
   { year: '2022', event: 'Đạt mốc 100 nhân viên, 300 dự án hoàn thành' },
@@ -42,12 +42,23 @@ function VeChungToiPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-extrabold text-white mb-6">
             Câu Chuyện Của<br />
-            <span className="gradient-text">TechPro Solutions</span>
+            <span className="gradient-text">BMSoftware</span>
           </h1>
           <p className="text-slate-300 text-lg leading-relaxed max-w-3xl mx-auto">
             Được thành lập năm 2016 với sứ mệnh giúp doanh nghiệp Việt Nam bứt phá trong kỷ nguyên số,
-            TechPro Solutions đã và đang đồng hành cùng hơn 200 doanh nghiệp trên hành trình chuyển đổi và phát triển.
+            BMSoftware đã và đang đồng hành cùng hơn 200 doanh nghiệp trên hành trình chuyển đổi và phát triển.
           </p>
+        </div>
+      </section>
+
+      {/* Brand */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden border border-slate-700/50 shadow-xl">
+          <img
+            src="/images/bmsoftware-brand-identity.jpg"
+            alt="Bộ nhận diện thương hiệu BMSoftware"
+            className="w-full h-auto"
+          />
         </div>
       </section>
 
@@ -66,7 +77,7 @@ function VeChungToiPage() {
             <TrendingUp className="w-8 h-8 text-violet-400 mb-4" />
             <h2 className="text-xl font-bold text-white mb-3">Tầm Nhìn</h2>
             <p className="text-slate-300 leading-relaxed">
-              Đến năm 2030, TechPro Solutions sẽ là công ty công nghệ hàng đầu Đông Nam Á, đồng hành cùng
+              Đến năm 2030, BMSoftware sẽ là công ty công nghệ hàng đầu Đông Nam Á, đồng hành cùng
               1.000+ doanh nghiệp trong cuộc cách mạng công nghiệp 4.0.
             </p>
           </div>
@@ -139,7 +150,7 @@ function VeChungToiPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-4">Đội Ngũ Lãnh Đạo</h2>
-          <p className="text-slate-400 text-center mb-12">Những người đặt nền móng và dẫn dắt TechPro vươn xa</p>
+          <p className="text-slate-400 text-center mb-12">Những người đặt nền móng và dẫn dắt BMSoftware vươn xa</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((t) => (
               <div key={t.name} className="text-center p-6 rounded-2xl bg-slate-800/50 border border-slate-700/50">
@@ -179,7 +190,7 @@ function VeChungToiPage() {
       <section className="py-16 px-4 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-white mb-4">Hãy Cùng Chúng Tôi Tạo Nên Thành Công!</h2>
-          <p className="text-slate-400 mb-8">Liên hệ ngay để được tư vấn miễn phí và khám phá cách TechPro có thể giúp doanh nghiệp bạn.</p>
+          <p className="text-slate-400 mb-8">Liên hệ ngay để được tư vấn miễn phí và khám phá cách BMSoftware có thể giúp doanh nghiệp bạn.</p>
           <Link to="/lien-he" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-violet-600 text-white font-semibold hover:opacity-90 transition-opacity">
             Liên Hệ Ngay <ArrowRight className="w-5 h-5" />
           </Link>

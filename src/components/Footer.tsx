@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TP</span>
+              <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1 shrink-0">
+                <img src="/images/bmsoftware-logo.png" alt="BMSoftware" className="w-full h-full object-contain" />
               </div>
-              <span className="text-white font-bold text-lg">TechPro Solutions</span>
+              <span className="text-white font-bold text-lg">BMSoftware</span>
             </div>
             <p className="text-sm text-slate-400 mb-4 leading-relaxed">
               Đối tác công nghệ tin cậy, giúp doanh nghiệp Việt Nam chuyển đổi và phát triển bền vững trong kỷ nguyên số.
@@ -60,14 +60,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
-                <a href="mailto:info@techpro.vn" className="hover:text-white transition-colors">info@techpro.vn</a>
+                <a href="mailto:contact@bmsoft.vn" className="hover:text-white transition-colors">contact@bmsoft.vn</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© 2024 TechPro Solutions. Tất cả quyền được bảo lưu.</p>
+          <p>© 2024 BMSoftware. Tất cả quyền được bảo lưu.</p>
           <p>Mã số thuế: 0123456789 | GPKD số: 0123456789</p>
         </div>
       </div>

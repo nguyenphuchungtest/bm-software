@@ -16,7 +16,7 @@ import {
 export const Route = createFileRoute('/dich-vu/chuyen-doi-so')({
   head: () => ({
     meta: [
-      { title: 'Chuyển Đổi Số - TechPro Solutions' },
+      { title: 'Chuyển Đổi Số - BMSoftware' },
       { name: 'description', content: 'Tư vấn và triển khai chuyển đổi số toàn diện cho doanh nghiệp. Áp dụng AI, automation và cloud để tăng hiệu suất hoạt động.' },
     ],
   }),

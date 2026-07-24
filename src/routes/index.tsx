@@ -101,21 +101,21 @@ const testimonials = [
     name: 'Nguyễn Văn An',
     role: 'CEO, Công ty TNHH ABC',
     content:
-      'TechPro Solutions đã giúp chúng tôi tăng doanh thu online lên 300% chỉ trong 6 tháng nhờ chiến lược quảng cáo số hiệu quả.',
+      'BMSoftware đã giúp chúng tôi tăng doanh thu online lên 300% chỉ trong 6 tháng nhờ chiến lược quảng cáo số hiệu quả.',
     stars: 5,
   },
   {
     name: 'Trần Thị Mai',
     role: 'Giám đốc Marketing, XYZ Corp',
     content:
-      'Website do TechPro thiết kế rất đẹp, tốc độ nhanh và tỷ lệ chuyển đổi tăng vọt. Đội ngũ hỗ trợ nhiệt tình, chuyên nghiệp.',
+      'Website do BMSoftware thiết kế rất đẹp, tốc độ nhanh và tỷ lệ chuyển đổi tăng vọt. Đội ngũ hỗ trợ nhiệt tình, chuyên nghiệp.',
     stars: 5,
   },
   {
     name: 'Lê Minh Tuấn',
     role: 'COO, TechStart Vietnam',
     content:
-      'Giải pháp phần mềm ERP của TechPro giúp chúng tôi tiết kiệm 40% chi phí vận hành. Đây là khoản đầu tư xứng đáng nhất.',
+      'Giải pháp phần mềm ERP của BMSoftware giúp chúng tôi tiết kiệm 40% chi phí vận hành. Đây là khoản đầu tư xứng đáng nhất.',
     stars: 5,
   },
 ]
@@ -141,7 +141,7 @@ function HomePage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-            TechPro Solutions cung cấp giải pháp công nghệ toàn diện — từ quảng cáo số, chuyển đổi số,
+            BMSoftware cung cấp giải pháp công nghệ toàn diện — từ quảng cáo số, chuyển đổi số,
             phát triển phần mềm đến xây dựng website — giúp doanh nghiệp bứt phá và tăng trưởng bền vững.
           </p>
 
@@ -168,6 +168,14 @@ function HomePage() {
                 <div className="text-sm text-slate-400">{stat.label}</div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl shadow-blue-500/10">
+            <img
+              src="/images/bmsoftware-hero-banner.jpg"
+              alt="BMSoftware - We turn ideas into powerful software"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
@@ -223,7 +231,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Tại Sao Chọn TechPro?
+              Tại Sao Chọn BMSoftware?
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
               Chúng tôi không chỉ cung cấp dịch vụ — chúng tôi là đối tác đồng hành cùng sự phát triển của bạn
@@ -283,7 +291,7 @@ function HomePage() {
               Sẵn Sàng Đưa Doanh Nghiệp Lên Tầm Cao Mới?
             </h2>
             <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
-              Hãy để TechPro Solutions đồng hành cùng bạn. Nhận tư vấn miễn phí ngay hôm nay và khám phá tiềm năng tăng trưởng của doanh nghiệp.
+              Hãy để BMSoftware đồng hành cùng bạn. Nhận tư vấn miễn phí ngay hôm nay và khám phá tiềm năng tăng trưởng của doanh nghiệp.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link

@@ -16,7 +16,7 @@ import {
 export const Route = createFileRoute('/dich-vu/ban-website')({
   head: () => ({
     meta: [
-      { title: 'Bán Website - TechPro Solutions' },
+      { title: 'Bán Website - BMSoftware' },
       { name: 'description', content: 'Thiết kế và bán website chuyên nghiệp: landing page, website công ty, website bán hàng, TMĐT. Tối ưu SEO, tốc độ nhanh, giá tốt nhất.' },
     ],
   }),

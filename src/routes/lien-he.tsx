@@ -5,8 +5,8 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, Loader2, Send } from 'lucide-r
 export const Route = createFileRoute('/lien-he')({
   head: () => ({
     meta: [
-      { title: 'Liên Hệ - TechPro Solutions' },
-      { name: 'description', content: 'Liên hệ TechPro Solutions để được tư vấn miễn phí về quảng cáo số, chuyển đổi số, phần mềm và website.' },
+      { title: 'Liên Hệ - BMSoftware' },
+      { name: 'description', content: 'Liên hệ BMSoftware để được tư vấn miễn phí về quảng cáo số, chuyển đổi số, phần mềm và website.' },
     ],
   }),
   component: LienHePage,
@@ -93,8 +93,8 @@ function LienHePage() {
                     {
                       icon: Mail,
                       label: 'Email',
-                      value: 'info@techpro.vn',
-                      href: 'mailto:info@techpro.vn',
+                      value: 'contact@bmsoft.vn',
+                      href: 'mailto:contact@bmsoft.vn',
                     },
                     {
                       icon: MapPin,
@@ -145,6 +145,14 @@ function LienHePage() {
                 </div>
               </div>
 
+              <div className="rounded-xl overflow-hidden border border-slate-700/50">
+                <img
+                  src="/images/bmsoftware-brand-banner.jpg"
+                  alt="BMSoftware"
+                  className="w-full h-auto"
+                />
+              </div>
+
               <div className="p-5 rounded-xl bg-gradient-to-br from-blue-500/10 to-violet-500/10 border border-blue-500/20">
                 <h3 className="font-semibold text-white mb-3 text-sm">Tại sao nên liên hệ ngay?</h3>
                 <ul className="space-y-2">
@@ -173,7 +181,7 @@ function LienHePage() {
                     </div>
                     <h3 className="text-xl font-bold text-white mb-2">Gửi Thành Công!</h3>
                     <p className="text-slate-300 text-sm">
-                      Cảm ơn bạn đã liên hệ. Đội ngũ TechPro sẽ phản hồi trong vòng 24 giờ làm việc.
+                      Cảm ơn bạn đã liên hệ. Đội ngũ BMSoftware sẽ phản hồi trong vòng 24 giờ làm việc.
                     </p>
                   </div>
                 ) : (
