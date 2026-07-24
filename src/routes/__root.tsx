@@ -8,8 +8,8 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'TechPro Solutions - Đối Tác Công Nghệ Tin Cậy' },
-      { name: 'description', content: 'TechPro Solutions cung cấp dịch vụ quảng cáo, chuyển đổi số, giải pháp phần mềm và bán website chuyên nghiệp cho doanh nghiệp Việt Nam.' },
+      { title: 'BMSoftware - Đối Tác Công Nghệ Tin Cậy' },
+      { name: 'description', content: 'BMSoftware cung cấp dịch vụ quảng cáo, chuyển đổi số, giải pháp phần mềm và bán website chuyên nghiệp cho doanh nghiệp Việt Nam.' },
     ],
   }),
   shellComponent: RootDocument,
