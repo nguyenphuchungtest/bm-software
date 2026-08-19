@@ -87,26 +87,20 @@ function LienHePage() {
                     {
                       icon: Phone,
                       label: 'Hotline',
-                      value: '0901 234 567',
+                      value: '0369 026 023',
                       href: 'tel:+84901234567',
                     },
                     {
                       icon: Mail,
                       label: 'Email',
-                      value: 'contact@bmsoft.vn',
-                      href: 'mailto:contact@bmsoft.vn',
+                      value: 'bmsoftware.contact@gmail.com',
+                      href: 'mailto:bmsoftware.contact@gmail.com',
                     },
                     {
                       icon: MapPin,
                       label: 'Trụ sở chính',
-                      value: '123 Nguyễn Văn Linh, Q.7, TP.HCM',
-                      href: null,
-                    },
-                    {
-                      icon: MapPin,
-                      label: 'Văn phòng Hà Nội',
-                      value: '456 Trần Duy Hưng, Cầu Giấy, Hà Nội',
-                      href: null,
+                      value: '20/4 Nguyễn Khoa Đăng, P.Thành Nhất, Tỉnh Đắk Lắk',
+                      href: 'https://maps.app.goo.gl/hE7gp36EeYvNLzPg9',
                     },
                   ].map((c) => {
                     const Icon = c.icon
@@ -217,7 +211,7 @@ function LienHePage() {
                             name="phone"
                             value={fields.phone}
                             onChange={handleChange}
-                            placeholder="0901 234 567"
+                            placeholder="0369 026 023"
                             className="w-full px-3 py-2.5 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-blue-500 transition-colors"
                           />
                         </div>
@@ -296,6 +290,9 @@ function LienHePage() {
                     </form>
                   </>
                 )}
+              </div>
+              <div className="mt-10 rounded-xl overflow-hidden border border-slate-700/50">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.217872779175!2d108.0044843858221!3d12.6337071948187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31721e79498e8ab5%3A0xc382d4c3f69d5fb0!2zMjAgTmd1eeG7hW4gS2hvYSDEkMSDbmcsIFRow6BuaCBOaOG6pXQsIMSQ4bqvayBM4bqvaywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1787138027601!5m2!1svi!2s" width="100%" height="450" loading="lazy"></iframe>
               </div>
             </div>
           </div>

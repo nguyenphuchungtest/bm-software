@@ -305,7 +305,7 @@ function HomePage() {
                 className="w-full sm:w-auto px-8 py-4 rounded-xl border border-slate-600 text-slate-300 font-semibold text-lg hover:border-white hover:text-white transition-all flex items-center justify-center gap-2"
               >
                 <Users className="w-5 h-5" />
-                Gọi: 0901 234 567
+                Gọi: 0369 026 023
               </a>
             </div>
           </div>
