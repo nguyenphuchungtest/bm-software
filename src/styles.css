@@ -27,6 +27,60 @@ code {
   50% { transform: translateY(-10px); }
 }
 
+@keyframes buttonWiggle {
+  0%, 55%, 100% { transform: rotate(0deg); }
+  62% { transform: rotate(-18deg); }
+  70% { transform: rotate(18deg); }
+  78% { transform: rotate(-12deg); }
+  86% { transform: rotate(8deg); }
+  93% { transform: rotate(-3deg); }
+}
+
+@keyframes buttonPopIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.92); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes buttonRipple {
+  0% { opacity: 0.55; transform: scale(0.92); }
+  80%, 100% { opacity: 0; transform: scale(1.42); }
+}
+
+.floating-contact-button {
+  position: relative;
+  isolation: isolate;
+  animation: buttonWiggle 1s ease-in-out infinite;
+}
+
+.floating-contact-button::before,
+.floating-contact-link::before {
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border: 2px solid rgba(59, 130, 246, 0.55);
+  border-radius: inherit;
+  content: '';
+  pointer-events: none;
+  animation: buttonRipple 1s ease-out infinite;
+}
+
+.floating-contact-button::after {
+  position: absolute;
+  inset: -4px;
+  z-index: -1;
+  border: 2px solid rgba(96, 165, 250, 0.35);
+  border-radius: inherit;
+  content: '';
+  pointer-events: none;
+  animation: buttonRipple 1s 0.5s ease-out infinite;
+}
+
+.floating-contact-link {
+  position: relative;
+  isolation: isolate;
+  animation: buttonWiggle 1s ease-in-out infinite;
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }

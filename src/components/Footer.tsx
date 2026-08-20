@@ -57,7 +57,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                <a href="tel:+84901234567" className="hover:text-white transition-colors">0369 026 023</a>
+                <a href="tel:+84369026023" className="hover:text-white transition-colors">0369 026 023</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
@@ -69,7 +69,7 @@ export function Footer() {
 
         <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate-500">
           <p>© 2026 BMSoftware. Tất cả quyền được bảo lưu.</p>
-          <p>Mã số thuế: 0123456789 | GPKD số: 0123456789</p>
+          {/* <p>Mã số thuế: 0123456789 | GPKD số: 0123456789</p> */}
         </div>
       </div>
     </footer>

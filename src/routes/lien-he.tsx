@@ -88,7 +88,7 @@ function LienHePage() {
                       icon: Phone,
                       label: 'Hotline',
                       value: '0369 026 023',
-                      href: 'tel:+84901234567',
+                      href: 'tel:+84369026023',
                     },
                     {
                       icon: Mail,

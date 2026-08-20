@@ -1,6 +1,7 @@
 import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { FloatingActions } from '@/components/FloatingActions'
 import { LanguageProvider } from '@/i18n/LanguageProvider'
 import '../styles.css'
 
@@ -29,6 +30,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             {children}
           </main>
           <Footer />
+          <FloatingActions />
         </LanguageProvider>
         <Scripts />
       </body>
