@@ -87,8 +87,8 @@ function LienHePage() {
                     {
                       icon: Phone,
                       label: 'Hotline',
-                      value: '0369 026 023',
-                      href: 'tel:+84369026023',
+                      value: '0379 847 472',
+                      href: 'tel:+84379847472',
                     },
                     {
                       icon: Mail,
@@ -211,7 +211,7 @@ function LienHePage() {
                             name="phone"
                             value={fields.phone}
                             onChange={handleChange}
-                            placeholder="0369 026 023"
+                            placeholder="0379 847 472"
                             className="w-full px-3 py-2.5 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-blue-500 transition-colors"
                           />
                         </div>

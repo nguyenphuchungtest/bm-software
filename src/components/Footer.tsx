@@ -18,10 +18,10 @@ export function Footer() {
               Đối tác công nghệ tin cậy, giúp doanh nghiệp Việt Nam chuyển đổi và phát triển bền vững trong kỷ nguyên số.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.facebook.com/BMSoftwareOfficial" className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a href="https://www.facebook.com/bmsoftware.vn" className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://www.youtube.com/@BMSoftwareOfficial" className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a href="https://www.youtube.com/@bmsoftwarevn" className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-red-600 transition-colors">
                 <Youtube className="w-4 h-4" />
               </a>
               <a href="https://www.linkedin.com/company/bmsoftware" className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-blue-700 transition-colors">
@@ -57,7 +57,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                <a href="tel:+84369026023" className="hover:text-white transition-colors">0369 026 023</a>
+                <a href="tel:+84379847472" className="hover:text-white transition-colors">0379 847 472</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
